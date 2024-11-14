@@ -16,9 +16,9 @@ public class NetworkController : NetworkBehaviour
     {
         if (!isLocalPlayer)
         {
-            fpsController.enabled = false;
+            fpsController.enabled = true;
             //gun.enabled = false;
-            playerCam.enabled = false;
+            playerCam.enabled = true;
             playerCam.GetComponent<AudioListener>().enabled = false;
         }
     }
